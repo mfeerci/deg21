@@ -1,0 +1,48 @@
+###########################################################
+#
+# Please do not remove remarks when copying
+# the parameters file. They contains useful
+# informations for making a new parameters file.
+#
+###########################################################
+
+######	GRID Parameters	###########
+
+XSIZE		256		Number of cells in X
+YSIZE		256		Number of cells in Y
+XRESOL		300. 	[pc]	Cell Size in X
+YRESOL		300. 	[pc]	Cell Size in Y
+
+# Note that XSIZE and YSIZE represent the whole grid,
+# of which only one fourth actually contains stars in
+# order to avoid aliasing in FFTs.
+
+
+####### GALAXY Parameters #############
+
+NUMBEROFSTARS 	45000 	Actually the galaxy contains twice these
+ZSOFT   	325.	[pc]	Softened Gravity tapering scale
+SIGMA0		772.	[SM/pc^2]
+Rd		3500.	[pc]	scale length of surfacic density
+ToomreCentral	1.05
+NINTERV		500		Hankel Transform precision
+Symmetry	YES		Central symmetry distribution
+
+
+######## OUTPUTS Parameters ##############
+
+NTOT		800		Total number of time steps
+NINTERM	 	30		Time steps between outputs
+DT		0.2	[Myr]	Time step length
+OUTPUTDIR	out/galSellwood/
+
+
+######## External optionnal parameters ############
+
+CENTRALMASS	2e9	[SM]	Mass of central object
+HALOCORE	10000.	[pc]	Halo core radius
+HALOSPEEDLIM	280.	[km/s]	Halo limit speed
+BULGEMASS 	12e9	[SM]	Mass of central bulge
+BULGERADIUS	200.	[pc]	Radius of bulge
+
+##############################################################
