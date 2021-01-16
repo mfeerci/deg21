@@ -101,7 +101,7 @@ void ParticleInCell(Grid *array, ParticleSet *particles)
       density[l] += a1;
       density[l + 2 * Nx] += a2;
       density[l + 2] += a3;
-      density[/* Encontrar el indice correcto */] += a4;
+      density[ l + 2 + 2*Nx  ] += a4;
 
 
       /*
