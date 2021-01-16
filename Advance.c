@@ -22,5 +22,9 @@ void AdvanceParticles(ParticleSet *set, real dt)
        actualizar las coordenadas de la particula i en funcion del
        paso de tiempo 'dt' y de las componentes 'vx[i]' y 'vy[i]' de
        su velocidad.  */
+ 
+  x[i] += dt*vx[i];
+  y[i] += dt*vy[i];
+  
   }
 }
