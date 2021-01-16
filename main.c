@@ -109,7 +109,7 @@ int main(int argc, char *argv[])
        ello tendran que haber resuelto la pregunta de 'Algo.c', ya que
        se usa la funcion 'ParticleInCell' mas arriba. */
         
-    Multiply(potential, kernel,  /* Escribir aqui el factor de normalizacion correcto */);
+    Multiply(potential, kernel,  XRESOL*YRESOL/XSIZE/YSIZE);
     FourierInverse(potential);
 
     if (i <= (NTOT/NINTERM)*NINTERM)
